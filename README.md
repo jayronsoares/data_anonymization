@@ -1,57 +1,26 @@
 # Data Anonymization Tool
 
-## Overview
+**Overview**  
+This web application, developed with Streamlit, enables you to anonymize data in CSV and Excel files easily. With a few simple steps, you can upload your data, apply anonymization techniques, and download the transformed files.
 
-A web app built with Streamlit to anonymize data from databases or uploaded files. It supports MySQL, PostgreSQL, SQL Server, CSV, and Excel formats. 
+**Features**  
+- **File Upload**: Supports both CSV and Excel files.  
+- **Anonymization Methods**: Choose from Hash, Mask, or Generalize techniques.  
+- **Download Options**: Save the anonymized data as CSV or Excel.
 
-## Features
+**How to Use**  
+1. **Upload Your File**: Select and upload a CSV or Excel file containing the data you want to anonymize.
 
-- **Connect to Databases**: MySQL, PostgreSQL, SQL Server.
-- **Upload Files**: CSV and Excel.
-- **Anonymization Methods**: Hash, Mask, Generalize.
-- **Download Options**: CSV and Excel.
+2. **Choose Anonymization Method**:  
+   - **Hash**: Convert values into hashed representations.  
+   - **Mask**: Replace values with masked or obfuscated data.  
+   - **Generalize**: Alter data to a less specific format (e.g., changing ages to age ranges).
 
-## Installation
+3. **Download the Transformed File**: After applying the anonymization methods, use the download buttons to save the anonymized data in CSV or Excel format.
 
-1. **Install Dependencies**:
-    ```bash
-    pip install pandas sqlalchemy streamlit pymysql psycopg2-binary pyodbc openpyxl
-    ```
+**Troubleshooting**  
+- Ensure the file is in CSV or Excel format.
+- Check that the file is not corrupted and is properly formatted.
 
-2. **Set Up Environment Variables**:
-    Create a `.env` file with:
-    ```text
-    DB_TYPE=MySQL
-    DB_USERNAME=your_username
-    DB_PASSWORD=your_password
-    DB_HOST=your_host
-    DB_PORT=your_port
-    DB_NAME=your_database
-    ```
-
-## Usage
-
-1. **Run the App**:
-    ```bash
-    streamlit run app.py
-    ```
-
-2. **Use the Tool**:
-    - **Database**: Select database type, enter credentials, choose a table, select columns, and anonymize.
-    - **File**: Upload a CSV or Excel file, choose columns to anonymize, and process the file.
-
-3. **Download Data**:
-    - After anonymizing, use the download buttons to save the data as CSV or Excel.
-
-## Troubleshooting
-
-- Check environment variables and library installations.
-- Ensure correct database credentials and file formats.
-
-## License
-
-MIT License.
-
----
-
-This version is concise and focuses on the essential information users need to get started quickly.
+**License**  
+MIT License
