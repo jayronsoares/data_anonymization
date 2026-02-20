@@ -6,3 +6,5 @@ psycopg2-binary
 pyodbc
 openpyxl
 python-dotenv
+streamlit>=1.25
+altair>=5,<6
